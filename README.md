@@ -86,7 +86,7 @@ GitHub：[xinwong/FreezeVLA](https://github.com/xinwong/FreezeVLA)（没有READM
 
 GitHub：[William-wAng618/roboticAttack: Official repo of Exploring the Adversarial Vulnerabilities of Vision-Language-Action Models in Robotics](https://github.com/William-wAng618/roboticAttack)
 
-![](fig/Exploring the Adversarial Vulnerabilities of Vision-Language-Action Models in Robotics_1.png)
+![](Fig/Exploring the Adversarial Vulnerabilities of Vision-Language-Action Models in Robotics_1.png)
 
 提出三个方法+一个评测指标
 
@@ -102,7 +102,7 @@ GitHub：[William-wAng618/roboticAttack: Official repo of Exploring the Adversar
 
 目标：给每个 DoF 设一个攻击目标动作，让模型去输出那个目标
 
-![](/fig/Exploring the Adversarial Vulnerabilities of Vision-Language-Action Models in Robotics_2.png)
+![](Fig/Exploring the Adversarial Vulnerabilities of Vision-Language-Action Models in Robotics_2.png)
 
 **评测指标：Normalized Action Discrepancy（NAD）**
 
