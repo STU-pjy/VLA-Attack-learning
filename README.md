@@ -6,7 +6,7 @@
 
 ## OpenVLA模型架构：
 
-![](./Fig\OpenVLA框架.png)
+![](./Fig/OpenVLA框架.png)
 
 ## 仿真平台：LIBERO
 
