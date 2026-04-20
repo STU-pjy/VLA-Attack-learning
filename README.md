@@ -6,7 +6,7 @@
 
 ## OpenVLA模型架构：
 
-![image-20260420214134950](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20260420214134950.png)
+![](D:\Desktop\Fig\OpenVLA框架.png)
 
 ## 仿真平台：LIBERO
 
@@ -64,7 +64,7 @@ GitHub：[trustmlyoungscientist/EDPA_attack_defense: Model-agnostic Adversarial 
 
 **优点：不需要动作输出，只是破坏视觉与语言的语义对齐，并且拉大干净图像和攻击图像在视觉表征空间的差异。**
 
-![image-20260420224329361](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20260420224329361.png)
+![](D:\Desktop\Fig\EDPA.png)
 
 ## 论文2：FREEZEVLA: Action-Freezing Attacks Against Vision-Language-Action Models
 
@@ -72,7 +72,7 @@ GitHub：[xinwong/FreezeVLA](https://github.com/xinwong/FreezeVLA)（没有READM
 
 **目的：让机器人不动（不动的时候相机视角不会改变，攻击会更加稳定、持久）**
 
-![image-20260420225531254](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20260420225531254.png)
+![](D:\Desktop\Fig\FreezeVLA.png)
 
 ##### Cross-prompt：现实里用户说什么任务指令，攻击者不一定知道，所以攻击图像要对不同 prompt 都有效。
 
