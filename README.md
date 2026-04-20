@@ -84,6 +84,32 @@ GitHub：[xinwong/FreezeVLA](https://github.com/xinwong/FreezeVLA)（没有READM
 
 ## 论文3：Exploring the Adversarial Vulnerabilities of Vision-Language-Action Models in Robotics
 
+GitHub：[William-wAng618/roboticAttack: Official repo of Exploring the Adversarial Vulnerabilities of Vision-Language-Action Models in Robotics](https://github.com/William-wAng618/roboticAttack)
+
+![](fig/Exploring the Adversarial Vulnerabilities of Vision-Language-Action Models in Robotics_1.png)
+
+提出三个方法+一个评测指标
+
+**方法1：UADA：Untargeted Action Discrepancy Attack**
+
+目标：对选中的动作维度，往离 ground truth 最远的动作边界推。
+
+**方法2：UPA：Untargeted Position-aware Attack**
+
+目标：不只是让位置预测错，而是让机器人在 3D 空间中的运动方向和目标方向发生明显偏离。（正常应该朝杯子伸过去，攻击后变成朝偏左、偏上、偏外的方向走）
+
+**方法3：TMA：Targeted Manipulation Attack**
+
+目标：给每个 DoF 设一个攻击目标动作，让模型去输出那个目标
+
+![](/fig/Exploring the Adversarial Vulnerabilities of Vision-Language-Action Models in Robotics_2.png)
+
+**评测指标：Normalized Action Discrepancy（NAD）**
+
+NAD = 实际动作偏差 / 该动作在合法范围内的最大可能偏差，然后对被攻击的 DoF 求平均。
+
+NAD 越高，说明攻击把机器人动作推得越远、越离谱。
+
 ## 论文4：Adversarial Attacks on Robotic Vision-Language-Action Models
 
 GitHub：[eliotjones1/robogcg: Official GitHub repository for the paper "Adversarial Attacks on Robotic Vision Language Action Models"](https://github.com/eliotjones1/robogcg)
