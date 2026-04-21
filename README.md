@@ -116,4 +116,40 @@ GitHub：[eliotjones1/robogcg: Official GitHub repository for the paper "Adversa
 
 **针对文本进行攻击**
 
-coming soon...
+攻击者通过 prompt，拿到机器人低层动作的控制权（control authority），作者发现VLA的底层框架跟LLM相似，VLA 仍然是在“生成 token”，只不过这些 token 对应的不是文字，而是动作。既然输出形式仍然是 token 序列，那 LLM 上的 GCG jailbreak 能不能直接改造过来？
+
+![](Fig/prompt_1.png)
+
+**两种攻击方法：**
+
+**方法1：在正常指令后面追加一串 adversarial suffix**
+
+比如原指令是：
+
+> pick coke can
+
+攻击后变成：
+
+> pick coke can + 一串优化出来的奇怪 token
+
+**方法2：干脆用攻击者自己选的一串 token 替换 prompt（该论文主要是研究方法1）**
+
+**三类攻击方向：**
+
+**攻击方向1：Single-step attack**
+
+目标：让机器人在当前一步输出攻击者指定的目标动作。攻击者先选一个目标动作 token 序列，然后优化 prompt suffix，使得这个目标动作的概率最大。
+
+实验结论：在很多 OpenVLA 微调模型上，仅靠 prompt 攻击，攻击者就可以把模型逼到几乎任意想要的目标动作。（reachability of the action space）
+
+**攻击方向2：Persistence attack**
+
+目标：不是只在第一步输出目标动作，而是希望在后续多步 rollout 中，仍然不断诱导出这个动作。single-step 的 loss 只在一张图像 embedding 上定义。persistence attack 则把 loss 扩展到多张图像 embedding 上求和。
+
+**攻击方向3：Transfer attack**
+
+目标：迁移到其他VLA
+
+实验结果：跨架构 transfer 很弱。
+
+# Coming soon...
