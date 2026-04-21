@@ -1,4 +1,4 @@
-# VLA-attack总结
+# VLA-Attack总结
 
 ## **VLA = Vision（看图）+ Language（听懂指令）+ Action（直接输出动作）**。
 
