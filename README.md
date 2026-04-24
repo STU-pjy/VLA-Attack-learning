@@ -26,6 +26,10 @@ pip install -e .
 
 [OpenVLA-OFT Repository](https://github.com/moojink/openvla-oft)
 
+## 评测指标：(Source / Object / Goal / Long 四种任务指标，FR)
+
+![](Fig/baseline.png)
+
 ## Dataset（RLDS格式）
 
 https://huggingface.co/datasets/openvla/modified_libero_rlds
